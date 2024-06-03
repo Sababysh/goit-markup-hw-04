@@ -77,7 +77,8 @@ footer {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    margin-right: 76px
+    margin-right: 76px;
+    position: relative;
 }
         
 .logo-black {
@@ -97,7 +98,6 @@ footer {
 
 .header-nav-item {
     margin-right: 40px;
-    position: relative;
 }
 
 .header-nav-item:last-child {
@@ -113,6 +113,7 @@ footer {
     text-decoration: none;
     padding: 24px 0 24px;
     color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
 .header-nav-link::after {
@@ -124,7 +125,6 @@ footer {
     height: 4px;
     background-color: #404bbf;
     border-radius: 2px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-nav-link:hover {
