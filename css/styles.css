@@ -452,6 +452,7 @@ footer {
     background: #4D5AE5;
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    line-height: 1.5;
 }
 
 .overlay-wrap {
@@ -487,7 +488,74 @@ footer {
 /* #endregion Section 4 Our Portfolio */
 
 /* #region Footer */
-.logo-footer {
+.footer {
+    color: #ffffff;
+    background-color: #2E2F42;
+    padding: 100px 0;
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-logo-text {
+    margin-right: 120px;
+}
+
+.footer-container .logo {
+    margin-bottom: 16px;
+}
+
+.footer-text {
+    color: #F4F4FD;
+    max-width: 264px;
+}
+
+.footer-socials {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer-social-text {
+    font-weight: 500;
+    letter-spacing: 0.32px;
+    margin-bottom: 16px;
+}
+
+.footer-social-list {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+/* .footer-social-icon {} */
+
+.footer-social-link {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    background-color: #4D5AE5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: #31D0AA;
+}
+
+
+.footer-social-svg {
+    fill: #f4f4fd;
+}
+
+/* .logo-footer {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -497,17 +565,23 @@ footer {
     color: #4d5ae5;
     display: inline-block;
     margin-bottom: 16px;
-}
+} */
 
 .logo-white {
     color: #f4f4fd;
 }
 
-.footer-paragraph {
+/* .footer-paragraph {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #F4F4FD;
     max-width: 264px;
 }
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+
+} */
 /* #endregion Footer */
 
