@@ -55,7 +55,8 @@ footer {
     background-color: #FFFFFF;
     padding-top: 24px;
     padding-bottom: 24px;
-    border-bottom: 1px solid #e7e9fc
+    border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -96,12 +97,7 @@ footer {
 
 .header-nav-item {
     margin-right: 40px;
-    /* font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2E2F42; */
+    position: relative;
 }
 
 .header-nav-item:last-child {
@@ -116,7 +112,20 @@ footer {
     color: #2E2F42;
     text-decoration: none;
     padding: 24px 0 24px;
+    color: #404bbf;
     }
+
+.header-nav-link::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .header-nav-link:hover {
     color: #404bbf;
@@ -151,7 +160,6 @@ footer {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    margin-right: 40px;
 }
 
 .address-item:last-child {
@@ -162,6 +170,7 @@ footer {
     color: #434455;
     text-decoration: none;
     letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-link:hover,
@@ -174,6 +183,11 @@ footer {
 .hero {
     padding: 188px 0 188px;
     background: #2E2F42;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg);
+    max-width: 1440px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 /* .hero-container {} */
@@ -204,13 +218,15 @@ footer {
     height: 56px;
     display: block;
     min-width: 169px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    
 }
 
 .btn-ground {
     background: #4D5AE5;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .btn-ground:hover,
@@ -402,7 +418,7 @@ footer {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #F4F4FD;
-    width: 264px;
+    max-width: 264px;
 }
 /* #endregion Footer */
 
