@@ -587,6 +587,10 @@ footer {
     color: #f4f4fd;
 }
 
+.description {
+    letter-spacing: 0.02em;
+}
+
 /* .footer-paragraph {
     line-height: 1.5;
     letter-spacing: 0.02em;
